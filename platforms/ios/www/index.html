@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Final App</title>
+	<link href="css/main.css" rel="stylesheet"/>
+    <script src="cordova.js"></script>
+   
+    <script src="js/ajax.js"></script>
+    <script src="js/hammer-min.js"></script>
+    <script src="js/app.js"></script>
+    
+</head>
+   
+<body>
+	<div class="wrapper">
+		<!-- container for all pages -->
+		
+   
+		 <!-- M A I N   P A G E -->
+		<section data-role="page" id="Main">
+			<h2 class="center">Dashboard</h2>
+            <p id="message"></p>
+            <div id="controls">
+                <form id="textField">
+                    <input type="text" name="textField" id="textInput"><br>
+                </form>
+                
+                <form id="settextButtons">  
+                    <input type="radio" name="settextTop" id="settextTop" value="Top">Top<br>
+                    <input type="radio" name="settextBottom" id="settextBottom" value="Bottom">Bottom<br>
+                </form> 
+                
+            
+                
+                
+                <div class="btn" id="setText"><a>Set Text</a></div>
+                <div class="btn" id="saveBtn"><a>Save</a></div>
+            </div>
+            <div id="imgHolder">
+                
+            </div>
+            
+		</section>
+        
+        
+		
+        <!-- G A L L E R Y   P A G E -->
+		<section data-role="page" id="Gallery">
+			<h2>Photo Gallery</h2>
+            
+            <div id="GalleryView">
+                <div id="row1" class="row">
+                    
+                    
+                </div>
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                   
+                </div>
+                <div class="row">
+                    
+                </div>
+                
+            </div>
+		</section>
+        <div id="footer">
+                 <nav class="navTabs">
+                  <ul>    
+                    <li class="" id="listPhoto">List Photos</li>
+                    <li class="" id="capturePhoto">Take Photo</li>
+                  </ul>
+                 </nav>
+            </div>
+         
+        
+		
+	</div>
+    <div data-role="overlay">&nbsp;</div>
+   
+    <div data-role="modal" id="ModalWindow">
+		<form>
+			<div class="formBox">
+				<!-- MUST BE A CANVAS TAG INSTEAD -->
+                <p id="blahblah"></p>
+                <img id="fullHolder"></img>
+			</div>
+			<div class="formBox">
+				<input type="button" id="btnCancel" value="CANCEL" />
+			</div>
+		</form>	
+	</div>
+    
+</body>
+</html>
